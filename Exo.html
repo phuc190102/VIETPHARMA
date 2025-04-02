@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm Exo Nano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<div class="header-img"></div>
+<header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="logo text-xl font-bold text-blue-500"> <a class="logo" href="../vietpharma/index.html"><img class="h-15" src="./images/logoepharma.jpg" alt=""></a></div>
+        <div class="search-box flex items-center">
+            <input type="text" placeholder="Tìm kiếm sản phẩm..."
+                class="w-96 px-4 py-2 border border-gray-300 rounded-l-md focus:ring-blue-500 focus:border-blue-500">
+            <button
+                class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                Tìm
+            </button>
+        </div>
+        <div class="flex items-center gap-4">
+            <nav class="category-menu hidden md:flex gap-4">
+                <a href="#" class="text-gray-700 hover:text-blue-500 transition-colors">Sữa rửa mặt</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500 transition-colors">Gel vệ sinh</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500 transition-colors">Chăm sóc da</a>
+            </nav>
+            <div class="cart">
+                <a href="#" class="text-gray-700 hover:text-blue-500 transition-colors">
+                    Giỏ hàng
+                </a>
+            </div>
+            <div class="account">
+                <a href="#" class="text-gray-700 hover:text-blue-500 transition-colors">
+                    Tài khoản
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-8 py-8 bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="main-product-image" src="./images/exonano.jpg" alt="Sản phẩm"
+                        class="w-full cursor-pointer h-100 rounded-lg border border-gray-200">
+                </div>
+                <!-- <div class="thumbnail-images mt-4 grid grid-cols-4 gap-2">
+                    <img src="" alt="Sản phẩm 1"
+                        class="thumbnail rounded-lg border border-gray-200 cursor-pointer hover:border-blue-500"
+                        onclick="changeMainImage(this)">
+                    <img src="" alt="Sản phẩm 2"
+                        class="thumbnail rounded-lg border border-gray-200 cursor-pointer hover:border-blue-500"
+                        onclick="changeMainImage(this)">
+                    <img src="" alt="Sản phẩm 3"
+                        class="thumbnail rounded-lg border border-gray-200 cursor-pointer hover:border-blue-500"
+                        onclick="changeMainImage(this)">
+                    <img src="" alt="Sản phẩm 4"
+                        class="thumbnail rounded-lg border border-gray-200 cursor-pointer hover:border-blue-500"
+                        onclick="changeMainImage(this)">
+                </div> -->
+                <div class="customer-images mt-8">
+                    <h3 class="text-lg font-semibold mb-4">Hình ảnh thực tế của khách hàng</h3>
+                    <div class="grid grid-cols-4 gap-2">
+                        <img src="./images/exo post 1.png" alt="Khách hàng 1" class="rounded-lg cursor-pointer border border-gray-200">
+                        <img src="./images/exo post 1.png" alt="Khách hàng 2" class="rounded-lg cursor-pointer border border-gray-200">
+                        <img src="./images/exo post 1.png" alt="Khách hàng 3" class="rounded-lg cursor-pointer border border-gray-200">
+                        <img src="./images/exo post 1.png" alt="Khách hàng 4" class="rounded-lg cursor-pointer border border-gray-200">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info col-span-1">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Gel rửa mặt ngừa mụn dưỡng ẩm Exo Nano 60g</h2>
+                <!-- <p class="text-sm text-gray-500 mb-4">Số công bố với Bộ Y Tế: 126276/20/CBMP-QLD</p> -->
+                <div class="flex items-center mb-4">
+                    <span class="text-yellow-400 mr-1">★★★★★</span>
+                    <span class="text-gray-600 text-sm mr-2">127 đánh giá</span>
+                    <span class="text-blue-500 text-sm mr-2">542 Hỏi đáp</span>
+                    <!-- <span class="text-gray-600 text-sm">Mã sản phẩm: 318900012</span> -->
+                </div>
+                <div class="flash-deal bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4"
+                    role="alert">
+                    <strong class="font-bold">MUA NGAY </strong>
+                    <span class="block sm:inline">ĐỂ NHẬN <span class="font-semibold">THÊM ƯU ĐÃI</span></span>
+                </div>
+                <!-- <p class="text-gray-700 font-medium text-lg mb-2">NƯỚC HOA HỒNG</p>
+                <ul class="list-disc list-inside text-gray-600 mb-4">
+                    <li>CÂN BẰNG ĐỘ ẨM</li>
+                    <li>LÀM DỊU DA</li>
+                    <li>KHÔNG HƯƠNG LIỆU</li>
+                    <li>CHO DA NHẠY CẢM</li>
+                    <li>180ML</li>
+                </ul> -->
+                <div class="price-section flex items-center mb-4">
+                    <p class="text-2xl font-bold text-red-600 mr-4">69.000₫</p>
+                    <p class="text-gray-500 text-sm line-through">Giá thị trường: 80.000₫</p>
+                    <p class="text-green-500 text-sm ml-2">- Tiết kiệm: 11.000đ</p>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-gray-700 font-medium mb-2">Khối lượng</p>
+                    <div class="flex space-x-2">
+                        <!-- <button
+                            class="size-button cursor-pointer bg-white border border-gray-300 rounded-md px-3 py-1 text-gray-700 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">2x30ml</button>
+                        <button
+                            class="size-button cursor-pointer bg-white border border-gray-300 rounded-md px-3 py-1 text-gray-700 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">2x180ml</button>
+                        <button
+                            class="size-button cursor-pointer bg-white border border-gray-300 rounded-md px-3 py-1 text-gray-700 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">10ml</button>
+                        <button
+                            class="size-button cursor-pointer bg-white border border-gray-300 rounded-md px-3 py-1 text-gray-700 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">30ml</button> -->
+                        <button
+                            class="size-button cursor-pointer bg-blue-100 border border-blue-500 rounded-md px-3 py-1 text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">60g</button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-gray-700 font-medium mb-2">Mùi hương</p>
+                    <div class="flex space-x-2">
+                        <button
+                            class="color-button cursor-pointer bg-white border border-gray-300 rounded-md px-3 py-1 text-gray-700 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">Không
+                            Mùi</button>
+                        <button
+                            class="color-button cursor-pointer bg-white border border-gray-300 rounded-md px-3 py-1 text-gray-700 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">Có
+                            Mùi</button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-gray-700 font-medium mb-2">Số lượng:</p>
+                    <div class="flex items-center space-x-2">
+                        <button
+                            class="quantity-button bg-white border border-gray-300 rounded-md px-2 py-1 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">-</button>
+                        <input type="number" value="1" min="1"
+                            class="quantity-input w-16 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button
+                            class="quantity-button bg-white border border-gray-300 rounded-md px-2 py-1 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">+</button>
+                    </div>
+                </div>
+
+                <div class="free-delivery bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4"
+                    role="alert">
+                    <strong class="font-bold">NowFree </strong>
+                    <span class="block sm:inline">Giao Nhanh Miễn Phí 2H</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-4">Bạn muốn nhận hàng trước 17h hôm nay (Miễn phí). Đặt hàng trong 47
+                    phút tới và chọn giao hàng 2H ở bước thanh toán. <a href="#"
+                        class="text-blue-500 hover:underline">Xem chi tiết</a></p>
+
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <button
+                            class="cart-button cursor-pointer bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-md px-6 py-2 mr-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">Giỏ
+                            hàng</button>
+                        <button
+                            class="buy-now-button cursor-pointer bg-red-500 hover:bg-red-600 text-white font-semibold rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-red-400">Đặt hàng </button>
+                    </div>
+                </div>
+
+                <!-- <div class="social-actions flex items-center space-x-4">
+                    <button
+                        class="like-button bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md px-2 py-2 flex items-center focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <svg xmlns="" class="h-4 w-4 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Thích 911
+                    </button>
+                    <button
+                        class="share-button bg-green-500 hover:bg-green-600 text-white font-semibold rounded-md px-4 py-2 flex items-center focus:outline-none focus:ring-2 focus:ring-green-400">
+                        <svg xmlns="" class="h-4 w-4 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M15 8a3 3 0 10-6 0v2H3a2 2 0 00-2 2v3a2 2 0 002 2h12a2 2 0 002-2v-3a2 2 0 00-2-2h-1V8z" />
+                        </svg>
+                        Chia sẻ
+                    </button>
+                    <button
+                        class="add-to-wishlist-button bg-transparent border border-gray-300 hover:border-yellow-500 text-gray-700 font-semibold rounded-md px-4 py-2 flex items-center focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <svg xmlns="" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        Thêm vào danh sách yêu thích
+                    </button>
+                </div> -->
+            </div>
+            <div class="promotion-info col-span-1">
+                <div
+                    class="free-shipping bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-md mb-4">
+                    <p class="font-semibold">Miễn Phí Vận Chuyển</p>
+                    <p class="text-sm">Giao Nhanh Miễn Phí 2H</p>
+                    <p class="text-sm">Trả góp 100K</p>
+                </div>
+                <div class="guarantee bg-white border border-gray-200 rounded-md px-4 py-3 mb-4">
+                    <p class="text-gray-700 text-sm">VietPharma đền bù 100% nếu phát hiện hàng giả</p>
+                </div>
+                <div class="shipping-fee bg-white border border-gray-200 rounded-md px-4 py-3 mb-4">
+                    <p class="text-gray-700 text-sm">Giao Hàng Miễn Phí (từ 90K tại 60 tỉnh thành trừ huyện, toàn quốc
+                        từ 249K)</p>
+                </div>
+                <div class="return-policy bg-white border border-gray-200 rounded-md px-4 py-3 mb-4">
+                    <p class="text-gray-700 text-sm">Đổi trả trong 30 ngày</p>
+                    <a href="#" class="text-blue-500 hover:underline text-sm">Xem thêm</a>
+                </div>
+                <!-- <div class="seller-info flex items-center space-x-4 mt-8">
+                    <strong class="font-semibold text-gray-700">dear, klairs</strong>
+                    <button
+                        class="follow-button bg-red-500 hover:bg-red-600 text-white font-semibold rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400">
+                        Theo dõi
+                        <span class="ml-2">7381</span>
+                    </button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeMainImage(thumbnail) {
+            const mainImage = document.getElementById('main-product-image');
+            mainImage.src = thumbnail.src;
+        }
+    </script>
+       <div class="section-dad px-8 py-8">
+        <div class="product-detail px-8 py-8">
+            <section class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-blue-600 mb-4"> Gel Rửa Mặt EXO Nano – Ngừa Mụn Hiệu Quả, Dưỡng Ẩm Chuyên Sâu, Da Sáng Mịn Tự Nhiên</h2>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Mô tả sản phẩm:</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    🌿 Gel rửa mặt ngừa mụn dưỡng ẩm EXO Nano là lựa chọn hoàn hảo giúp làm sạch da hiệu quả, giảm dầu thừa và hỗ trợ ngăn ngừa mụn nhờ vào công nghệ Nano Curcumin. Sản phẩm giúp cân bằng độ pH, giữ ẩm tự nhiên và giúp da luôn căng mịn.
+                </p>
+                <h3 class="text-xl font-semibold text-green-600 mb-2">Công Dụng Nổi Bật:</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Làm sạch sâu, ngăn ngừa mụn hiệu quả.</li>
+                    <li>Dưỡng ẩm tự nhiên, giúp da luôn căng mướt, không bị khô.</li>
+                    <li>Cân bằng độ pH, hỗ trợ giảm thâm mụn.</li>
+                    <li>Kiểm soát dầu nhờn, phù hợp với da dầu và da nhạy cảm.</li>
+                    <li>Không chứa cồn, paraben, an toàn cho mọi loại da.</li>
+                </ul>
+                <h3 class="text-xl font-semibold text-purple-600 mb-2">Thành Phần Chính:</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>✔ Nano Curcumin: Kháng khuẩn, giảm viêm, hỗ trợ làm mờ thâm.</li>
+                    <li>✔ Chiết xuất Rau Má: Làm dịu da, phục hồi hàng rào bảo vệ da.</li>
+                    <li>✔ Tràm Trà (Tea Tree Oil): Kiểm soát dầu nhờn, hỗ trợ giảm mụn đầu đen, mụn viêm.</li>
+                    <li>✔ Lô Hội (Aloe Vera) & Vitamin E: Dưỡng ẩm sâu, giúp da căng bóng, mềm mịn suốt ngày dài.</li>
+                </ul>
+                <h3 class="text-xl font-semibold text-yellow-600 mb-2">Hướng Dẫn Sử Dụng:</h3>
+                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                    <li>1️⃣ Làm ướt mặt với nước ấm.</li>
+                    <li>2️⃣ Lấy một lượng Gel rửa mặt ngừa mụn dưỡng ẩm vừa đủ ra tay, tạo bọt nhẹ.</li>
+                    <li>3️⃣ Massage nhẹ nhàng khắp mặt trong 30 - 60 giây.</li>
+                    <li>4️⃣ Rửa sạch lại với nước và lau khô bằng khăn mềm.</li>
+                    <li>5️⃣ Dùng đều đặn mỗi ngày sáng và tối để đạt hiệu quả tối ưu.</li>
+                </ol>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Lợi ích khi sử dụng:</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Làm sạch sâu, ngăn ngừa mụn hiệu quả.</li>
+                    <li>Dưỡng ẩm tự nhiên, giúp da luôn căng mướt, không bị khô.</li>
+                    <li>Cân bằng độ pH, hỗ trợ giảm thâm mụn.</li>
+                    <li>Kiểm soát dầu nhờn, phù hợp với da dầu và da nhạy cảm.</li>
+                    <li>Không chứa cồn, paraben, an toàn cho mọi loại da.</li>
+                </ul>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Cam Kết Sản Phẩm:</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Không chứa paraben, không gây kích ứng da.</li>
+                    <li>Được kiểm định chất lượng trước khi đưa ra thị trường.</li>
+                </ul>
+                <p class="text-lg font-semibold text-red-600">🚀 Sử dụng thường xuyên, bạn sẽ cảm nhận làn da sạch sâu, giảm mụn và luôn mềm mịn!</p>
+            </section>
+            
+            
+        </div>
+        <section class="form-container">
+            <h2>Liên hệ với chúng tôi</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="name">Địa chỉ</label>
+                    <input type="text" id="address" name="address" placeholder="Nhập địa chỉ của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="message">Tin nhắn</label>
+                    <textarea id="message" name="message" placeholder="Nhập tin nhắn của bạn"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Gửi tin nhắn</button>
+                </div>
+            </form>
+        </section>
+      
+    </div>
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Thông tin liên hệ</h4>
+                <p>Địa chỉ: 117-119 Lý Chính Thắng, Phường Võ Thị Sáu, Quận 3, TP.HCM</p>
+                <p>Điện thoại: 089 898 0255</p>
+                <p>Email: sales@vietpharma.net</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Chính sách</h4>
+                <ul class="list-none space-y-2">
+                    <li><a href="#" class="hover:text-blue-300 transition-colors">Chính sách bảo mật</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition-colors">Chính sách vận chuyển</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition-colors">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Mạng xã hội</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-blue-300 transition-colors">Facebook</a>
+                    <a href="#" class="hover:text-blue-300 transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-blue-300 transition-colors">Youtube</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4 text-gray-400">
+            &copy; 2025 VietPharma. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

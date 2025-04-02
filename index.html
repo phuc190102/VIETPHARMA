@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VietPharma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="font-inter bg-gray-100">
+    <header class="bg-[#fff] shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="logo text-xl font-bold text-blue-500"> <a class="logo" href="#"> <img class="h-15"
+                        src="./images/logoepharma.jpg" alt=""> </a></div>
+            <div class="search-box flex items-center">
+                <input type="text" placeholder="Tìm kiếm sản phẩm..."
+                    class="w-96 px-4 py-2 border border-gray-300 rounded-l-md focus:ring-blue-500 focus:border-blue-500">
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Tìm
+                </button>
+            </div>
+            <div class="flex items-center gap-4">
+                <nav class="category-menu hidden md:flex gap-4">
+                    <a href="#" class="text-gray-700 hover:text-blue-500 transition-colors">Trang chủ</a>
+                    <a href="#contact-section" class="text-gray-700 hover:text-blue-500 transition-colors">Liên hệ</a>
+                    <a href="#about-section" class="text-gray-700 hover:text-blue-500 transition-colors">Về chúng
+                        tôi</a>
+                </nav>
+                <div class="cart">
+                    <a href="#" class="text-gray-700 hover:text-blue-500 transition-colors">
+                        Giỏ hàng
+                    </a>
+                </div>
+                <div class="account">
+                    <a href="#" class="text-gray-700 hover:text-blue-500 transition-colors">
+                        Tài khoản
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+        <div class="dad-section">
+            <section class="slider-container mb-8">
+                <div class="slider">
+                    <div class="slide">
+                        <a href="../vietpharma/Ginex.html">
+                            <img src="./images/slide-ginex.png" alt="Slide 1">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="../vietpharma/Exo.html">
+                            <img src="./images/slide-exo.png" alt="Slide 1">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="../vietpharma/Offix.html">
+                            <img src="./images/slide-offix.png" alt="Slide 1">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="../vietpharma/Herbal.html">
+                            <img src="./images/slide-herbal.png" alt="Slide 1">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div class="dot active" data-slide="0"></div>
+                    <div class="dot" data-slide="1"></div>
+                    <div class="dot" data-slide="2"></div>
+                    <div class="dot" data-slide="3"></div>
+                </div>
+            </section>
+            <div class="right">
+                <div class="top">
+                    <img src="./images/right1.png" alt="banner-ben-tren">
+                </div>
+                <div class="bottom">
+                    <img src="./images/logobenduoi.png" alt="banner-ben-duoi">
+                </div>
+            </div>
+        </div>
+        <section class="banner-container">
+            <img src="./images/banner-update.jpg" alt="banner-sieu-cap-xinh-gai">
+        </section>
+        <div class="discount-menu">
+            <div class="discount-item">
+                <img src="images/1.png" alt="Giá Cực Sốc">
+                <p>Giá Cực Sốc</p>
+            </div>
+            <div class="discount-item">
+                <img src="images/2.png" alt="Giao 2H">
+                <p>Giao 2H</p>
+            </div>
+            <div class="discount-item">
+                <img src="images/3.png" alt="Nước Hoa Chính Hãng">
+                <p>Dung dịch vệ sinh</p>
+            </div>
+            <div class="discount-item">
+                <img src="images/4.png" alt="Clinic & S.P.A">
+                <p>Chăm sóc da</p>
+            </div>
+            <div class="discount-item">
+                <img src="images/5.png" alt="Clinic Deals">
+                <p>Mã giảm giá</p>
+            </div>
+            <div class="discount-item">
+                <img src="images/7.png" alt="Mua Là Có Quà">
+                <p>Mua Là Có Quà</p>
+            </div>
+            <div class="discount-item">
+                <img src="images/8.png" alt="Đặt hẹn">
+                <p>Đặt hẹn</p>
+            </div>
+            <div class="discount-item">
+                <img src="images/9.png" alt="Cẩm nang">
+                <p>Cẩm nang</p>
+            </div>
+        </div>
+        <section class="filter-container">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Bộ lọc sản phẩm</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="filter-group">
+                    <label for="category">Danh mục</label>
+                    <select id="category">
+                        <option value="">Tất cả</option>
+                        <option value="skincare">Dung dịch vệ sinh</option>
+                        <option value="makeup">Sữa rửa mặt</option>
+                        <option value="haircare">Gel vệ sinh</option>
+                        <option value="perfume">Chăm sóc da</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="brand">Thương hiệu</label>
+                    <select id="brand">
+                        <option value="">Tất cả</option>
+                        <option value="brand1">Offix Nano</option>
+                        <option value="brand2">Ginex Nano</option>
+                        <option value="brand3">Exo Nano</option>
+                        <option value="brand3">Herbal Nano</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Giá</label>
+                    <select id="price">
+                        <option value="">Tất cả</option>
+                        <option value="0-100">Dưới 100.000đ</option>
+                        <option value="100-200">100.000đ - 200.000đ</option>
+                        <option value="200-500">200.000đ - 500.000đ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex justify-center mt-4">
+                <button
+                    class="bg-blue-500 text-white justify-between px-4 py-2 rounded-r-md hover:bg-blue-600 focus:outline-none rounded-md cursor-pointer focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Tìm
+                </button>
+            </div>
+
+        </section>
+
+        <section class="product-categories mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Danh mục sản phẩm</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div
+                    class="bg-white rounded-lg shadow-md p-4 flex items-center gap-4 hover:shadow-lg cursor-pointer transition-shadow">
+                    <img src="./images/3.png" alt="Dung dịch vệ sinh" class="rounded-full">
+                    <h3 class="text-lg font-semibold text-gray-700">Dung dịch vệ sinh</h3>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md p-4 flex items-center gap-4 hover:shadow-lg cursor-pointer transition-shadow">
+                    <img src="./images/cham-soc-da.jpg" alt="Sữa rửa mặt" class="rounded-full">
+                    <h3 class="text-lg font-semibold text-gray-700">Sữa rửa mặt</h3>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md p-4 flex items-center gap-4 hover:shadow-lg cursor-pointer transition-shadow">
+                    <img src="./images/gel-ve-sinh.jpg" alt="Gel vệ sinh" class="rounded-full">
+                    <h3 class="text-lg font-semibold text-gray-700">Gel vệ sinh</h3>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md p-4 flex items-center gap-4 hover:shadow-lg cursor-pointer transition-shadow">
+                    <img src="./images/4.png" alt="Chăm sóc da" class="rounded-full">
+                    <h3 class="text-lg font-semibold text-gray-700">Chăm sóc da</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Sản phẩm nổi bật</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="product-item">
+                    <img src="./images/ginexnano.jpg" alt="ginex">
+                    <h3>GINEX NANO</h3>
+                    <p>Gel tắm và vệ sinh Ginex Nano</p>
+                    <p class="price">140.000đ</p>
+                    <button onclick="goToProductDetail('Ginex.html')"
+                        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-full">Xem
+                        chi tiết
+                    </button>
+                </div>
+                <div class="product-item">
+                    <img src="./images/herbalnano.jpg" alt="herbal">
+                    <h3>HERBAL NANO</h3>
+                    <p>Gel tắm và vệ sinh Herbal Nano</p>
+                    <p class="price">89.000đ</p>
+                    <button onclick="goToProductDetail('Herbal.html')"
+                        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-full">Xem
+                        chi tiết</button>
+                </div>
+                <div class="product-item">
+                    <img src="./images/offixnano.jpg" alt="offix">
+                    <h3>OFFIX NANO</h3>
+                    <p>Gel tắm và vệ sinh Offix Nano</p>
+                    <p class="price">140.000đ</p>
+                    <button onclick="goToProductDetail('Offix.html')"
+                        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-full">Xem
+                        chi tiết</button>
+                </div>
+                <div class="product-item">
+                    <img src="./images/exonano.jpg" alt="exo">
+                    <h3>EXO NANO</h3>
+                    <p>Sữa rửa mặt Exo Nano</p>
+                    <p class="price">69.000đ</p>
+                    <button onclick="goToProductDetail('Exo.html')"
+                        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-full">Xem
+                        chi tiết</button>
+                </div>
+            </div>
+        </section>
+        <div id="contact-section" class="section-dad">
+            <section class="form-container">
+                <h2>Liên hệ với chúng tôi</h2>
+                <form action="./process_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Số điện thoại</label>
+                        <input type="number" id="phoneNumber" name="phoneNumber"
+                            placeholder="Nhập số điện thoại của bạn">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ</label>
+                        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ của bạn">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tin nhắn</label>
+                        <textarea id="message" name="message" placeholder="Nhập tin nhắn của bạn"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Gửi tin nhắn</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer id="about-section" class="relative bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Thông tin liên hệ</h4>
+                <p>CÔNG TY TNHH DƯỢC VietPharma</p>
+                <p>Địa chỉ: 117-119 Lý Chính Thắng, Phường Võ Thị Sáu, Quận 3, TP.HCM</p>
+                <p>Điện thoại: 089 898 0255</p>
+                <p>Email: sales@vietpharma.net</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Chính sách</h4>
+                <ul class="list-none space-y-2">
+                    <li><a href="#" class="hover:text-blue-300 transition-colors">Chính sách bảo mật</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition-colors">Chính sách vận chuyển</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition-colors">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Mạng xã hội</h4>
+                <div class="flex gap-3">
+                    <a href="#" class="hover:text-blue-300 transition-colors">
+                        <i class="fab fa-facebook"></i>
+                        <span class="ml-2">Facebook</span>
+                    </a>
+                    <a href="#" class="hover:text-blue-300 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                        <span class="ml-2">Instagram</span>
+                    </a>
+                    <a href="#" class="hover:text-blue-300 transition-colors">
+                        <i class="fab fa-youtube"></i>
+                        <span class="ml-2">Youtube</span>
+                    </a>
+                    <a href="#" class="hover:text-blue-300 transition-colors">
+                        <i class="fab fa-tiktok"></i>
+                        <span class="ml-2">Tiktok</span>
+                    </a>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        <div class="absolute bottom-10 right-30 w-25 h-25">
+            <img src="./images/logoepharma.jpg" alt="Your Image" class="w-full h-full object-cover">
+        </div>
+        <div class="text-center mt-4 text-gray-400">
+            &copy; 2025 VietPharma. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        const navDots = document.querySelectorAll('.dot');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        let currentIndex = 0;
+        let intervalId;
+
+        function goToSlide(index) {
+            if (index < 0) {
+                index = slides.length - 1;
+            } else if (index >= slides.length) {
+                index = 0;
+            }
+            currentIndex = index;
+            slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+            navDots.forEach(dot => dot.classList.remove('active'));
+            navDots[currentIndex].classList.add('active');
+        }
+
+        function nextSlide() {
+            goToSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            goToSlide(currentIndex - 1);
+        }
+
+        function startSlider() {
+            if (intervalId) {
+                clearInterval(intervalId);
+            }
+            intervalId = setInterval(nextSlide, 1500);
+        }
+
+        function stopSlider() {
+            clearInterval(intervalId);
+        }
+
+        navDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                goToSlide(index);
+                stopSlider();
+                startSlider();
+            });
+        });
+        slider.addEventListener('mouseenter', stopSlider);
+        slider.addEventListener('mouseleave', startSlider);
+
+        startSlider();
+        function goToProductDetail(page) {
+            // Chuyển đến trang chi tiết sản phẩm.
+            window.location.href = page;
+        }
+    </script>
+
+
+</body>
+
+</html>
