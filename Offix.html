@@ -285,17 +285,22 @@
         </div>
         <section class="form-container">
             <h2>Liên hệ với chúng tôi</h2>
-            <form>
+            <form action="./process_form.php" method="post">
                 <div class="form-group">
                     <label for="name">Họ và tên</label>
                     <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Số điện thoại</label>
+                    <input type="number" id="phoneNumber" name="phoneNumber"
+                        placeholder="Nhập số điện thoại của bạn">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn">
                 </div>
                 <div class="form-group">
-                    <label for="name">Địa chỉ</label>
+                    <label for="address">Địa chỉ</label>
                     <input type="text" id="address" name="address" placeholder="Nhập địa chỉ của bạn">
                 </div>
                 <div class="form-group">
